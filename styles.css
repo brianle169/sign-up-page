@@ -1,0 +1,245 @@
+* {
+   /* border: 1px solid red; */
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+   padding: 0;
+   margin: 0;
+   height: 100vh;
+   background-color: rgb(234, 244, 218);
+}
+
+.wrapper {
+   height: 100vh;
+   display: flex;
+}
+
+.wrapper > .image-holder {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+   width: 40%;
+   background-image: url("steven-cordes-_BLumpF_FRA-unsplash.jpg");
+   background-size: auto;
+   background-repeat: no-repeat;
+   background-position: left;
+}
+
+.image-holder > span {
+   align-self: center;
+   margin-bottom: 5%;
+   text-align: center;
+   font-size: 0.8rem;
+   color: #98989894;
+}
+
+.image-holder > .logo-container {
+   background-color: #000000ac;
+   align-self: center;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 15px;
+   margin-top: 30%;
+   padding: 10px;
+   overflow: hidden;
+}
+
+.logo-container h1 {
+   color: #769442;
+}
+
+.logo-container img {
+   background-color: #76944296;
+   border-radius: 50%;
+   padding: 5px;
+   width: 70px;
+   height: 70px;
+}
+
+.image-holder a {
+   appearance: none;
+   color: #98989894;
+}
+
+.form-wrapper {
+   display: flex;
+   align-items: center;
+   width: 60%;
+   height: 100vh;
+}
+
+.form-section {
+   display: flex;
+   height: 100%;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding: 40px 0px;
+}
+
+.form-section > * {
+   margin: 0;
+}
+
+.form-section > p:first-child {
+   padding-left: 50px;
+   width: 85%;
+   font-weight: 700;
+   font-size: 1.5rem;
+   color: #769442;
+   line-height: 1.5;
+}
+
+.form-section > .main-form {
+   margin-top: 6%;
+   margin-bottom: 6%;
+   width: 100%;
+   height: auto;
+   background-color: #fff;
+   box-shadow: 5px 10px 9px 0px rgba(0, 0, 0, 0.1);
+   padding: 30px 50px;
+   display: flex;
+   flex-flow: row wrap;
+   column-gap: 40px;
+   row-gap: 30px;
+}
+
+.form-section > p:last-child {
+   padding-left: 50px;
+   font-size: 1rem;
+   font-weight: 700;
+   color: #00000096;
+}
+
+.form-section > p:last-child > a {
+   color: #769442;
+}
+
+.form-section > p:last-child > a:link {
+   text-decoration: none;
+}
+
+.main-form > label {
+   width: 100%;
+   font-weight: 700;
+   font-size: 1.5rem;
+   color: #769442;
+}
+
+.main-form div {
+   display: flex;
+   flex-direction: column;
+   row-gap: 5px;
+   width: 31%;
+   height: 60px;
+}
+
+.main-form div > label {
+   font-size: 0.7rem;
+   font-weight: 700;
+   color: #769442e1;
+}
+
+/* Reset default style */
+.main-form div > input {
+   appearance: none;
+}
+
+/* Then we style */
+.main-form div > input {
+   font-size: 0.9rem;
+   font-family: inherit;
+   outline: none;
+   border: 2px solid #76944246;
+   border-radius: 10px;
+   line-height: 1.5rem;
+   padding: 5px 5px;
+}
+
+.main-form div > input:focus {
+   border: 2px solid #769442;
+   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.462);
+}
+
+.main-form div > input:valid {
+   background-color: #76944279;
+}
+
+.main-form div > button {
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: #fff;
+   border: 2px solid #4a5e2966;
+   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.462);
+   background-color: #769442;
+   border-radius: 12px;
+   width: 80%;
+   height: 85%;
+   overflow: hidden;
+}
+
+.main-form div > button:active:hover {
+   background-color: #5d7633;
+   color: #ffffff6c;
+   box-shadow: none;
+}
+
+.main-form div > button:hover {
+   background-color: #91b84f;
+}
+
+input ~ span {
+   font-size: 0.6rem;
+   font-weight: 500;
+   color: rgba(255, 0, 0, 0.622);
+}
+
+@media only screen and (max-width: 600px) {
+   .wrapper {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .wrapper > .image-holder {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 60%;
+      width: 100%;
+      background-image: url("/steven-cordes-_BLumpF_FRA-unsplash.jpg");
+   }
+
+   .image-holder > .logo-container {
+      margin: 30px 0px;
+   }
+
+   .form-wrapper {
+      width: 100%;
+      height: 100vh;
+   }
+
+   .form-section > p:first-child {
+      padding-right: 50px;
+      text-align: center;
+      width: 100%;
+   }
+
+   .form-section > p:last-child {
+      width: 100%;
+      padding-right: 50px;
+      text-align: center;
+   }
+
+   .main-form div {
+      width: 42%;
+      height: 60px;
+   }
+}

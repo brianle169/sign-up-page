@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sign Up</title>
+      <link rel="stylesheet" href="styles.css" />
+      <script src="script.js" defer></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="image-holder">
+            <div class="logo-container">
+               <img src="logo.png" alt="" />
+               <h1>The Amazon Tour</h1>
+            </div>
+            <span
+               >Photo by
+               <a href="https://unsplash.com/@steven3466">Steven Cordes</a> on
+               <a href="https://unsplash.com/photos/_BLumpF_FRA"
+                  >Unsplash</a
+               ></span
+            >
+         </div>
+         <div class="form-wrapper">
+            <div class="form-section">
+               <p>
+                  Sign up to join us on an amazing adventure through the Amazon
+                  Forest!
+               </p>
+               <form id="main-form" class="main-form">
+                  <label for="main-form">Let's do this!</label>
+                  <div class="fname">
+                     <label for="fname">FIRST NAME</label>
+                     <input
+                        type="text"
+                        name="fname"
+                        id="fname"
+                        pattern="\D+"
+                        required
+                     />
+                     <span></span>
+                  </div>
+                  <div class="lname">
+                     <label for="lname">LAST NAME</label>
+                     <input
+                        type="text"
+                        name="lname"
+                        id="lname"
+                        pattern="\D+"
+                        required
+                     />
+                     <span></span>
+                  </div>
+                  <div class="email">
+                     <label for="email">EMAIL</label>
+                     <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        minlength="10"
+                        required
+                     />
+                     <span></span>
+                  </div>
+                  <div class="tel">
+                     <label for="tel">PHONE NUMBER</label>
+                     <input
+                        type="tel"
+                        name="telNum"
+                        id="tel"
+                        pattern="(\d{10})|(\d{3}[\s-.]?\d{3}[\s-.]?\d{4}[\s-.]?)"
+                        required
+                     />
+                     <span></span>
+                  </div>
+                  <div class="pwd">
+                     <label for="pwd">PASSWORD</label>
+                     <input
+                        type="password"
+                        name="password"
+                        id="pwd"
+                        minlength="8"
+                        maxlength="64"
+                        required
+                     />
+                     <span></span>
+                  </div>
+                  <div class="cpwd">
+                     <label for="cpwd">CONFIRM PASSWORD</label>
+                     <input
+                        type="password"
+                        name="confirm-password"
+                        id="cpwd"
+                        minlength="8"
+                        maxlength="64"
+                        required
+                     />
+                     <span></span>
+                  </div>
+                  <div>
+                     <button>I'm In!</button>
+                  </div>
+               </form>
+               <p>Already have an account? <a href="">Log In</a></p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
