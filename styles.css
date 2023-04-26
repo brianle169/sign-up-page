@@ -116,6 +116,7 @@ body {
    padding-left: 50px;
    font-size: 1rem;
    font-weight: 700;
+   margin-bottom: 30px;
    color: #00000096;
 }
 
@@ -214,7 +215,7 @@ input ~ span {
       justify-content: space-between;
       height: 30%;
       width: 100%;
-      background-image: url("/steven-cordes-_BLumpF_FRA-unsplash.jpg");
+      background-image: url("steven-cordes-_BLumpF_FRA-unsplash.jpg");
       background-size: cover;
    }
 
@@ -234,6 +235,7 @@ input ~ span {
    }
 
    .form-section > p:last-child {
+      height: 80px;
       width: 100%;
       padding-right: 50px;
       text-align: center;
